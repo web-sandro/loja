@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Tarefas</title>
+</head>
+
+<body>
+    <h1>Listar Tarefas</h1>
+
+    <table border>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição</th>
+          <th>Feito</th>
+          <th>Data de Criação</th>
+          <th>Data de Atualização</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% tarefas.forEach(tarefa => { %>
+          <tr>
+            <td><%= tarefa.id %></td>
+            <td><%= tarefa.descricao %></td>
+            <td><%= tarefa.feito ? 'Sim' : 'Não' %></td>
+            <td><%= tarefa.data_criacao %></td>
+            <td><%= tarefa.data_atualizacao %></td>
+            <td>
+              <a href="tarefas/exibir/<%= tarefa.id %>">Exibir</a>
+              <a href="tarefas/deletar/<%= tarefa.id %>">Deletar</a>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+    <a href="tarefas/cadastrar">Cadastrar uma nova tarefa</a>
+</body>
+
+</html>

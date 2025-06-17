@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Tarefa</title>
+</head>
+<body>
+    <h1>Detalhes da Tarefa</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <td><%= tarefa.id %></td>
+        </tr>
+        <tr>
+            <th>Descrição</th>
+            <td><%= tarefa.descricao %></td>
+        </tr>
+        <tr>
+            <th>Feito</th>
+            <td><%= tarefa.feito %></td>
+        </tr>
+        <tr>
+            <th>Data de Criação</th>
+            <td><%= tarefa.data_criacao %></td>
+        </tr>
+        <tr>
+            <th>Data de Atualização</th>
+            <td><%= tarefa.data_atualizacao %></td>
+        </tr>
+    </table>
+
+    <a href="/tarefas/deletar/<%= tarefa.id %>">Deletar</a>
+    <a href="/tarefas">Voltar</a>
+    
+</body>
+</html>

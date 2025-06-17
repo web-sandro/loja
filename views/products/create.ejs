@@ -1,0 +1,23 @@
+<h2>Produtos</h2>
+
+<% if (typeof errors !== 'undefined' && errors.length > 0) { %>
+  <div class="message message-error">
+    <ul>
+      <% for (const error of errors) { %>
+        <li><%= error %></li>
+      <% } %>
+    </ul>
+  </div>
+<% } %>
+
+<div class="product">
+    <h3>Cadastrar Produto</h3>
+
+    <form action="/produtos/cadastrar" method="post">
+        <input type="text" name="name" id="name" placeholder="Nome" value="<%= formData.name || '' %>">
+        <input type="number" name="price" id="price" placeholder="Preço" value="<%= formData.price || '' %>">
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <p><a href="/produtos">Voltar</a></p>
+</div>

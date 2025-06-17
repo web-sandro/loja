@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar Tarefa</title>
+</head>
+<body>
+    <h1>Deletar Tarefa</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <td><%= tarefa.id %></td>
+        </tr>
+        <tr>
+            <th>Descrição</th>
+            <td><%= tarefa.descricao %></td>
+        </tr>
+        <tr>
+            <th>Feito</th>
+            <td><%= tarefa.feito %></td>
+        </tr>
+        <tr>
+            <th>Data de Criação</th>
+            <td><%= tarefa.data_criacao %></td>
+        </tr>
+        <tr>
+            <th>Data de Atualização</th>
+            <td><%= tarefa.data_atualizacao %></td>
+        </tr>
+    </table>
+
+    <form action="/tarefas/deletar/<%= tarefa.id %>" method="POST">
+        <button type="submit">Confirmar Deleção</button>
+    </form>
+
+    <a href="/tarefas/exibir/<%= tarefa.id %>">Cancelar</a>
+</body>
+</html>

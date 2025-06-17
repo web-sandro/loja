@@ -1,0 +1,3 @@
+<header>
+    <h1>MyApp</h1>
+</header>

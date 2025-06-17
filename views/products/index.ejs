@@ -1,0 +1,18 @@
+<h2>Produtos</h2>
+
+<div class="products">
+    <% for (const product of products) { %>
+        <div class="product">
+            <h3><a href="/produtos/<%= product.id %>"><%= product.name %></a></h3>
+
+            <ul>
+                <li><b>Código:</b> <%= product.id %></li>
+                <li><b>Preço:</b> R$ <%= product.price %></li>
+            </ul>
+        </div>
+    <% } %>
+</div>
+
+<div>
+    <a href="/produtos/cadastrar">Cadastrar Produto</a>
+</div>
