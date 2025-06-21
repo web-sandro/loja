@@ -14,7 +14,6 @@ const index_3 = require('./routes/index_3');
 const index_4 = require('./routes/index_4');
 const index_5 = require('./routes/index_5');
 const index_6 = require('./routes/index_6');
-const index_7 = require('./routes/index_7');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
 
@@ -49,7 +48,6 @@ app.use('/index_3', index_3);
 app.use('/index_4', index_4);
 app.use('/index_5', index_5);
 app.use('/index_6', index_6);
-app.use('/index_7', index_7);
 app.use('/usuarios', usersRouter);
 app.use('/produtos', productsRouter);
 
