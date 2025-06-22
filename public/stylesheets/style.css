@@ -941,7 +941,7 @@ body {
   align-items: center;
   width: 150px;
   height: 50px;
-  margin-top: 3px;
+  margin-top: 8px;
   border-radius: 5px;
   border: 1px solid #070707;
   background: rgb(225, 235, 160);;
@@ -966,7 +966,7 @@ body {
   border-radius: 8px;
   width: 300px;
   height: 400px;
-  margin-top: 3px;
+  margin-top: 10px;
   margin-bottom: 1%;
   border: 2px solid #7de9bf;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
